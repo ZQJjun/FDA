@@ -1,0 +1,11 @@
+I=imread ('10.png');
+figure,imshow(I);
+img=double(I)/255;
+t=imread('f1.bmp'); 
+t=double(t)/255;
+Imax=max(img,[],3);
+Imin=min(img,[],3);
+%figure,imshow(Imax);
+figure1,imhist(I);
+figure,imhist(Imin);
+%figure,imhist(t);
